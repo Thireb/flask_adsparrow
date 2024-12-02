@@ -17,7 +17,7 @@ chrome_options.add_argument("--disable-gpu")
 chrome_options.headless = True
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "aae6598e0a26ad98f2198df841d8c0f2b73cd3e6a979e184"
+app.config["SECRET_KEY"] = "secret-key"
 cors = CORS(app)
 
 ## Log EXP

@@ -1,0 +1,75 @@
+{% extends 'dashboard/base.html' %}
+
+{% block body %}                      
+<h5 class="fw-bold py-3 mb-4">
+  <span class="text-muted fw-light">Home /</span> Niches
+</h5>
+
+<!-- Basic Bootstrap Table -->
+<div class="card">
+  <h5 class="card-header">Niches</h5>
+  <div class="table-responsive text-nowrap">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Niche</th>
+          <th>Domains</th>
+          <!-- <th>Active</th> -->
+          <!-- <th>Expired</th> -->
+           <th>Hided</th>
+          <th>Products</th>
+          <th>Sales</th>
+           <th>Action</th>
+           
+        </tr>
+      </thead>
+      <tbody class="table-border-bottom-0">
+     {% if flag %}   
+          {%for i in range(0, len) %}
+        <tr>
+          <td>{{i+1}}</td>
+        <td><i class="fas fa-shopping-basket fa-lg text-danger me-3"></i> <strong>{{niches[i]['niche_name']}}</strong></td>
+        <td><a href="/dashboard/niche/domain/{{niches[i]['id']}}">{{niches[i]['niche_domains']}}</a></td>
+        <!-- <td><a href="#">0</a></td> -->
+        <!-- <td><a href="#">0</a></td> -->
+          <td>
+            <!-- <a href="#"> -->
+              {{niches[i]['hidden_domains']}}
+            <!-- </a> -->
+          </td>
+        <td>{{niches[i]['total_products']}}</td>
+        <td>{{niches[i]['total_sales']}}</td>
+        <td>
+          <div class="dropdown">
+            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+              <a class="dropdown-item" href="/dashboard/delniche/{{niches[i]['id']}}"><i class="bx bx-trash me-1"></i> Delete</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+          {%endfor%}
+        
+      {%else%}
+      <tr>
+        <td>
+          Nothing To See here!
+        </td>
+      </tr>
+
+      {%endif%}
+      </tbody>
+    </table>
+  </div>
+</div>
+<!--/ Basic Bootstrap Table -->
+
+
+
+ 
+</div>
+
+            
+{% endblock %}

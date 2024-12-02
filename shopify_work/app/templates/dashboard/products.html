@@ -1,0 +1,324 @@
+{% extends 'dashboard/base.html' %} {% block body %}
+
+<h5 class="fw-bold py-3 mb-4">
+  <span class="text-muted fw-light">Home /</span> Products
+</h5>
+
+<div class="table-responsive text-nowrap">
+  <table
+    id="domains"
+    class="table table-striped table-bordered"
+    style="width: 100%"
+  >
+    <thead>
+      <tr>
+        <th
+          rowspan="2"
+          style="text-align: center; width: 149px"
+          valign="middle"
+          class="sorting"
+          tabindex="0"
+          aria-controls="DataTables_Table_0"
+          colspan="1"
+          aria-label="Name: activate to sort column ascending"
+        >
+          Preview
+        </th>
+        <th
+          rowspan="2"
+          valign="middle"
+          class="sorting_disabled"
+          colspan="1"
+          aria-label="ADS"
+          style="width: 45px"
+        >
+          Product
+        </th>
+        <th
+          rowspan="2"
+          valign="middle"
+          class="sorting_disabled"
+          colspan="1"
+          aria-label="ADS"
+          style="width: 45px"
+        >
+          Price
+        </th>
+        <th
+          rowspan="2"
+          valign="middle"
+          class="sorting"
+          tabindex="0"
+          aria-controls="DataTables_Table_0"
+          colspan="1"
+          aria-label="Url: activate to sort column ascending"
+          style="width: 36px"
+        >
+          Today
+        </th>
+
+        <th colspan="7" style="text-align: center" rowspan="1">Week</th>
+        <th
+          rowspan="2"
+          style="text-align: center; width: 93px"
+          valign="middle"
+          class="sorting"
+          tabindex="0"
+          aria-controls="DataTables_Table_0"
+          colspan="1"
+          aria-label="Products: activate to sort column ascending"
+        >
+          Weekly
+        </th>
+        <th
+          rowspan="2"
+          style="text-align: center; width: 56px"
+          valign="middle"
+          class="sorting"
+          tabindex="0"
+          aria-controls="DataTables_Table_0"
+          colspan="1"
+          aria-label="Sales: activate to sort column ascending"
+        >
+          Sales
+        </th>
+        <th
+          rowspan="2"
+          style="text-align: center; width: 53px"
+          valign="middle"
+          class="sorting"
+          tabindex="0"
+          aria-controls="DataTables_Table_0"
+          colspan="1"
+          aria-label="Days: activate to sort column ascending"
+        >
+          Save
+        </th>
+      </tr>
+
+      <tr>
+        <th
+          class="sorting"
+          tabindex="0"
+          aria-controls="DataTables_Table_0"
+          rowspan="1"
+          colspan="1"
+          aria-label="1: activate to sort column ascending"
+          style="width: 42px"
+        >
+          1
+        </th>
+        <th
+          class="sorting"
+          tabindex="0"
+          aria-controls="DataTables_Table_0"
+          rowspan="1"
+          colspan="1"
+          aria-label="2: activate to sort column ascending"
+          style="width: 42px"
+        >
+          2
+        </th>
+        <th
+          class="sorting"
+          tabindex="0"
+          aria-controls="DataTables_Table_0"
+          rowspan="1"
+          colspan="1"
+          aria-label="3: activate to sort column ascending"
+          style="width: 42px"
+        >
+          3
+        </th>
+        <th
+          class="sorting"
+          tabindex="0"
+          aria-controls="DataTables_Table_0"
+          rowspan="1"
+          colspan="1"
+          aria-label="4: activate to sort column ascending"
+          style="width: 42px"
+        >
+          4
+        </th>
+        <th
+          class="sorting"
+          tabindex="0"
+          aria-controls="DataTables_Table_0"
+          rowspan="1"
+          colspan="1"
+          aria-label="5: activate to sort column ascending"
+          style="width: 42px"
+        >
+          5
+        </th>
+        <th
+          class="sorting"
+          tabindex="0"
+          aria-controls="DataTables_Table_0"
+          rowspan="1"
+          colspan="1"
+          aria-label="6: activate to sort column ascending"
+          style="width: 42px"
+        >
+          6
+        </th>
+        <th
+          class="sorting"
+          tabindex="0"
+          aria-controls="DataTables_Table_0"
+          rowspan="1"
+          colspan="1"
+          aria-label="7: activate to sort column ascending"
+          style="width: 42px"
+        >
+          7
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {% if d_len != 0 %}
+      {% for item in data %}
+      <tr>
+        <td>
+          <img
+            src="{{ item['pic'] }}"
+            style="width: 50px; height: 75px; border-radius: 4px"
+          />
+        </td>
+        <td>
+          <a
+            href="#"
+            title="FB ads library by Store"
+            class="text-primary fw-bold"
+            target="_blank"
+            >{{ item['name'] }}</a
+          >
+          <div>
+            <span
+              class="text-danger small pt-1 fw-bold"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title=""
+              data-bs-original-title="Created AT"
+              ><i class="fa fa-calendar-alt"></i> :
+            </span>
+            <span class="text-danger small pt-2 ps-1">05-07-22</span>
+            <span>|</span>
+            <span
+              class="small pt-1 fw-bold"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title=""
+              data-bs-original-title="Finded AT"
+              ><i class="fa fa-calendar-alt"></i> :
+            </span>
+            <span class="small pt-2 ps-1">15-09-22</span>
+            <span>|</span>
+            <span
+              class="small pt-1 fw-bold"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title=""
+              data-bs-original-title="Updated AT"
+              ><i class="fa fa-history"></i> :
+            </span>
+            <span class="small pt-2 ps-1">{{item['updated']}}</span>
+            <span>|</span>
+            <span
+              class="text-muted small pt-1 fw-bold"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title=""
+              data-bs-original-title="Something About Niche"
+            >
+              <i class="fa fa-shopping-basket"></i>
+              <!-- <img src="/Dashboard/assets/img/exit-top-right.png" width="8px" /> -->
+              :
+            </span>
+
+            <span class="text-muted small pt-2 ps-1">
+              <a
+                href="#"
+                class="text-primary"
+                target="_blank"
+              >
+                {{item['niche']}}
+              </a>
+            </span>
+            <span>|</span>
+            <span
+              class="text-muted small pt-1 fw-bold"
+              data-bs-toggle="tooltip"
+              data-bs-placement="bottom"
+              title=""
+              data-bs-original-title="Goto Site"
+            >
+              <!-- <i class="bi bi-box-arrow-in-up-right"></i>  -->
+              <i class="fa fa-external-link-alt"></i>
+              :
+            </span>
+            <span class="text-muted small pt-2 ps-1">
+              <a
+                href="{{item['domain']}}"
+                class="text-primary"
+                target="_blank"
+              >
+                <!-- <img
+                  src="/Dashboard/assets/img/exit-top-right.png"
+                  width="8px"
+                /> -->
+                <span>{{item['domain_name']}}</span>
+              </a>
+            </span>
+          </div>
+        </td>
+        <td>{{item['price']}}</td>
+
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td><b>0</b></td>
+        <td>
+          {% if item['fav'] %}
+          <a href="/del_fav/{{item['item_id']}}" ><i class="bx bxs-heart"></i></a>
+          {% else %}
+          <a href="/add_fav/{{item['item_id']}}" ><i class="bx bx-heart"></i></a>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+      {% else %}
+        <tr>
+          <td>
+            Nothing To See Here!
+          </td>
+        </tr>
+      {% endif %}
+    </tbody>
+    <!--   <tfoot>
+            <tr>
+                  <th>Name</th>
+                <th>ADS</th>
+                <th>Url</th>
+                <th>Pixels</th>
+                <th>Week</th>
+                <th>Products</th>
+                  <th>Sales</th>
+                <th>Days</th>
+                <th>AT</th>
+                <th>Change </th>
+                <th>Hide</th>
+                <th>Renew</th>
+            </tr>
+        </tfoot>-->
+  </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,399 @@
+{% extends 'dashboard/base.html' %} 
+{% block body %}
+
+
+<style>
+  @import url("//fonts.googleapis.com/css?family=Open+Sans"); 
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"); 
+  
+  .social_sales .card { 
+      position:  relative; 
+      display:  flex; 
+      flex-direction:  column; 
+      min-width:  0; 
+      word-wrap:  break-word; 
+      background-color:  #fff; 
+      background-clip:  border-box; 
+      border:  none; 
+      border-radius:  5px; 
+      margin-bottom: 30px; 
+      box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1); 
+      overflow: hidden;
+  } 
+  
+  .social_sales .dashboard .top-selling { 
+      font-size: 14px;
+  } 
+  
+  .social_sales .row > *  { 
+      flex-shrink: 0; 
+      width: 100%; 
+      max-width: 100%; 
+      padding-right: calc(var(--bs-gutter-x) * .5); 
+      padding-left: calc(var(--bs-gutter-x) * .5); 
+      margin-top: var(--bs-gutter-y);
+  } 
+  
+  .social_sales .col-12 { 
+      flex: 0 0 auto; 
+      width: 100%;
+  } 
+  
+  .social_sales .row { 
+      --bs-gutter-x: 1.5rem; 
+      --bs-gutter-y: 0; 
+      display: flex; 
+      flex-wrap: wrap; 
+      margin-top: calc(-1 * var(--bs-gutter-y)); 
+      margin-right: calc(-.5 * var(--bs-gutter-x)); 
+      margin-left: calc(-.5 * var(--bs-gutter-x));
+  } 
+  
+  @media (min-width: 992px){ 
+  .social_sales  .col-lg-12 { 
+      flex: 0 0 auto; 
+      width: 100%;
+    } 
+  }     
+  
+  .social_sales #main { 
+      margin-top: 60px; 
+      padding: 20px 30px; 
+      transition: all 0.3s;
+  } 
+  
+  @media (min-width: 1200px){ 
+  .social_sales  #main { 
+      margin-left: 300px;
+    } 
+  
+    .toggle-sidebar #main { 
+      margin-left: 0;
+    } 
+  }     
+  .social_sales .card-body { 
+      flex: 1 1 auto; 
+      padding: 1rem 1rem;
+  } 
+  
+  .social_sales .pb-3 { 
+      padding-bottom: 1rem!important;
+  } 
+  
+  .social_sales .card-body { 
+      padding: 0 20px 20px 20px;
+  } 
+  
+  
+  .social_sales table { 
+      caption-side: bottom; 
+      border-collapse: collapse;
+  } 
+  
+  .social_sales .table { 
+      --bs-table-bg: transparent; 
+      --bs-table-accent-bg: transparent; 
+      width: 100%; 
+      margin-bottom: 1rem; 
+      color: #212529; 
+      vertical-align: top; 
+      border-color: #dee2e6;
+  } 
+  
+  .social_sales thead { 
+      border-color: inherit; 
+      border-style: solid; 
+      border-width: 0;
+  } 
+  
+  .social_sales .table > thead  { 
+      vertical-align: bottom;
+  } 
+  
+  .social_sales .table thead  { 
+      background: #f6f6fe;
+  } 
+  
+  .social_sales tbody { 
+      border-color: inherit; 
+      border-style: solid; 
+      border-width: 0;
+  } 
+  
+  .social_sales .table > tbody  { 
+      vertical-align: inherit;
+  } 
+  
+  .social_sales .table > :not(:first-child)  { 
+      border-top: 2px solid currentColor;
+  } 
+  
+  .social_sales .table-borderless > :not(:first-child)  { 
+      border-top-width: 0;
+  } 
+  
+  .social_sales tr { 
+      border-color: inherit; 
+      border-style: solid; 
+      border-width: 0;
+  } 
+  
+  .social_sales th { 
+      text-align:  inherit; 
+      text-align:  -webkit-match-parent;
+      border-color: inherit; 
+      border-style: solid; 
+      border-width: 0;
+  } 
+  
+  .social_sales .table > :not(caption) > * > *  { 
+      padding: .5rem .5rem; 
+      background-color: var(--bs-table-bg); 
+      border-bottom-width: 1px; 
+      box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+  } 
+  
+  .social_sales .table-borderless > :not(caption) > * > *  { 
+      border-bottom-width: 0;
+  } 
+  
+  .social_sales .table thead th  { 
+      border: 0;
+  } 
+  
+  .social_sales td { 
+      border-color: inherit; 
+      border-style: solid; 
+      border-width: 0;
+  } 
+  
+  .table tbody td  { 
+      vertical-align: middle;
+  } 
+  
+  .social_sales a { 
+      color:  #4154f1; 
+      text-decoration:  none;
+  } 
+  
+  .social_sales a:hover { 
+      color:  #717ff5; 
+      text-decoration: none;
+  } 
+  
+  .social_sales img { 
+      vertical-align: middle;
+  } 
+  
+  .social_sales img  { 
+      border-radius: 5px; 
+      max-width: 60px;
+  } 
+  
+  
+  
+  </style>
+            
+                       
+<h5 class="fw-bold py-3 mb-4">
+  <span class="text-muted fw-light">Home /</span> Products
+</h5>
+
+
+<div class="table-responsive text-nowrap">
+<table id="domains" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th rowspan="2" style="text-align: center; width: 149px;" valign="middle" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" colspan="1" aria-label="Name: activate to sort column ascending">Preview</th>
+                <th rowspan="2" valign="middle" class="sorting_disabled" colspan="1" aria-label="ADS" style="width: 45px;">Product</th>
+                <th rowspan="2" valign="middle" class="sorting_disabled" colspan="1" aria-label="ADS" style="width: 45px;">Price</th>
+                <th rowspan="2" valign="middle" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" colspan="1" aria-label="Url: activate to sort column ascending" style="width: 36px;">Today</th>
+            <th rowspan="2" valign="middle" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" colspan="1" aria-label="Url: activate to sort column ascending" style="width: 36px;">Week</th>
+               <th rowspan="2" valign="middle" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" colspan="1" aria-label="Url: activate to sort column ascending" style="width: 36px;">Sold</th>
+                  <th rowspan="2" valign="middle" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" colspan="1" aria-label="Url: activate to sort column ascending" style="width: 36px;">Created</th>
+                     <th rowspan="2" valign="middle" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" colspan="1" aria-label="Url: activate to sort column ascending" style="width: 36px;">Published</th>
+                        <th rowspan="2" valign="middle" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" colspan="1" aria-label="Url: activate to sort column ascending" style="width: 36px;">Finded</th>
+            
+            </tr>
+            
+         </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="assets/img/product1.jpg" style="width:50px;height:75px;border-radius:4px">
+                </td>
+                <td>
+																		
+									<a href="#" title="FB ads library by Store" class="text-primary fw-bold" target="_blank">The Shark Tank Kit - Concealer + Eye Tool + Pimple Patches by Stryx</a>
+									<div>
+							
+								<span class="text-muted small pt-1 fw-bold"> <img src="/Dashboard/assets/img/exit-top-right.png" width="8px"> : </span>
+								<span class="text-muted small pt-2 ps-1">
+																<a href="niche.php?niche=302" class="text-primary" target="_blank">
+								home and furniture						</a>
+								</span>
+								<span class="text-muted small pt-1 fw-bold"> <i class="bi bi-box-arrow-in-up-right"></i> : </span>
+								<span class="text-muted small pt-2 ps-1">
+																<a href="domain.php?domain=6738" class="text-primary" target="_blank">
+																    <img src="/Dashboard/assets/img/exit-top-right.png" width="8px">
+									<strike><span style="color:red">Morealis</span></strike><br>
+									</a>
+								</span>
+								<span style="color:red;font-size:12px">adagio , adagio fountain , adagio indoor fountains , adagio inspiration falls wall fountain , Adagio Majestic River Water Features <br>
+								, adagio sunrise springs wall fountain , adagio wall fountains , adagio water features wall fountain indoor , adagio water features wall fountain outdoor <br>
+								, adagio water fountain , adagio water wall , adagio wcs whispering creek featherstone wall fountain<br>
+								, adagio wcs whispering creek wall fountain , adagio whispering creek wall fountain , reflection creek wall fountain , serene waters wall fountain</span>
+							</div>
+					</td>
+                <td>
+																		
+								4379
+					</td>
+                
+                 <td>4379</td>
+                  <td>4379</td>
+                   <td>4379</td>
+                    <td>4379</td>
+                     <td>4379</td>
+                      <td>4379</td>
+                
+            </tr>
+                      
+                        
+        </tbody>
+     <!--   <tfoot>
+            <tr>
+                  <th>Name</th>
+                <th>ADS</th>
+                <th>Url</th>
+                <th>Pixels</th>
+                <th>Week</th>
+                <th>Products</th>
+                  <th>Sales</th>
+                <th>Days</th>
+                <th>AT</th>
+                <th>Change </th>
+                <th>Hide</th>
+                <th>Renew</th>
+            </tr>
+        </tfoot>-->
+    </table> 
+        
+</div>
+
+ 
+</div>
+
+            
+          </div>
+          <!-- / Content -->
+
+
+<div class="social_sales">
+<div class="card-body pb-3 snipcss-Mksfj">
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th scope="col" colspan="2">
+          FB Ads
+        </th>
+        <th scope="col" colspan="4">
+          Search by Image
+        </th>
+        <th scope="col" colspan="4">
+          Search by Title
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="https://www.facebook.com/ads/library/?active_status=all&amp;ad_type=all&amp;country=ALL&amp;q=Adagio Majestic River Round Stainless Steel Green Marble - MRR2005&amp;search_type=keyword_unordered&amp;media_type=all" title="FB ads library by Title" target="_blank">
+            <img src="https://sniperfy.com/users/assets/img/fb.png">
+          </a>
+        </td>
+        <td>
+          <a href="https://www.facebook.com/ads/library/?active_status=all&amp;ad_type=all&amp;country=ALL&amp;q=morealis.co&amp;search_type=keyword_unordered&amp;media_type=all" title="FB ads library by Store" target="_blank">
+            <img src="https://sniperfy.com/users/assets/img/fb.png">
+          </a>
+        </td>
+        <td>
+          <a href="https://www.google.com/searchbyimage?hl=en&amp;site=imghp&amp;q=site:aliexpress.com&amp;authuser=0&amp;image_url=https://cdn.shopify.com/s/files/1/0020/6382/7008/products/adagio-majestic-river-round-stainless-steel-green-marble-mrr2005-1.jpg?v=1644073402" title="google search by img in Aliexpres" target="_blank">
+            <img src="https://sniperfy.com/users/assets/img/aliexpress.png">
+          </a>
+        </td>
+        <td>
+          <a href="https://www.google.com/searchbyimage?hl=en&amp;site=imghp&amp;q=site:ebay.com&amp;authuser=0&amp;image_url=https://cdn.shopify.com/s/files/1/0020/6382/7008/products/adagio-majestic-river-round-stainless-steel-green-marble-mrr2005-1.jpg?v=1644073402" title="google search by img in eBay" target="_blank">
+            <img src="https://sniperfy.com/users/assets/img/ebay.png">
+          </a>
+        </td>
+        <td>
+          <a href="https://www.google.com/searchbyimage?hl=en&amp;site=imghp&amp;q=site:amazon.com&amp;authuser=0&amp;image_url=https://cdn.shopify.com/s/files/1/0020/6382/7008/products/adagio-majestic-river-round-stainless-steel-green-marble-mrr2005-1.jpg?v=1644073402" title="google search by img in Amazon" target="_blank">
+            <img src="https://sniperfy.com/users/assets/img/amazon.png">
+          </a>
+        </td>
+        <td>
+          <a href="https://www.google.com/searchbyimage?hl=en&amp;site=imghp&amp;q=powered by shopify&amp;authuser=0&amp;image_url=https://cdn.shopify.com/s/files/1/0020/6382/7008/products/adagio-majestic-river-round-stainless-steel-green-marble-mrr2005-1.jpg?v=1644073402" title="google search by img in Shopify" target="_blank">
+            <img src="https://sniperfy.com/users/assets/img/shopify.png">
+          </a>
+        </td>
+        <td>
+          <a href="https://www.aliexpress.com/wholesale?SearchText=Adagio Majestic River Round Stainless Steel Green Marble - MRR2005" title="Aliexpres search by Title" target="_blank">
+            <img src="https://sniperfy.com/users/assets/img/aliexpress.png">
+          </a>
+        </td>
+        <td>
+          <a href="https://www.ebay.com/sch/i.html?_from=R40&amp;_nkw=Adagio Majestic River Round Stainless Steel Green Marble - MRR2005" title="eBay search by Title" target="_blank">
+            <img src="https://sniperfy.com/users/assets/img/ebay.png">
+          </a>
+        </td>
+        <td>
+          <a href="https://www.amazon.com/s/ref=nb_sb_noss_2?&amp;field-keywords=Adagio Majestic River Round Stainless Steel Green Marble - MRR2005" title="Amazon search by Title" target="_blank">
+            <img src="https://sniperfy.com/users/assets/img/amazon.png">
+          </a>
+        </td>
+        <td>
+          <a href="https://www.google.com/search?q=powered by shopify Adagio Majestic River Round Stainless Steel Green Marble - MRR2005" title="Shopify search by Title" target="_blank">
+            <img src="https://sniperfy.com/users/assets/img/shopify.png">
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<div class="row">
+
+  <!-- Line Area Chart -->
+  <div class="col-12 mb-4">
+    <div class="card">
+      <div class="card-header d-flex justify-content-between">
+        <div>
+          <h5 class="card-title mb-0">Sales Chart</h5>
+          <small class="text-muted">Sales Report</small>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn dropdown-toggle px-0" data-bs-toggle="dropdown" aria-expanded="false"><i class="bx bx-calendar"></i></button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Today</a></li>
+            <li><a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Yesterday</a></li>
+            <li><a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Last 7 Days</a></li>
+            <li><a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Last 30 Days</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Current Month</a></li>
+            <li><a href="javascript:void(0);" class="dropdown-item d-flex align-items-center">Last Month</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-body">
+        <div id="lineAreaChart"></div>
+      </div>
+    </div>
+  </div>
+  <!-- /Line Area Chart -->          
+          
+
+  {% endblock %}

@@ -1,0 +1,54 @@
+{
+    "data": [{
+        "page_id": "111405324671436",
+        "ad_snapshot_url": "https://www.facebook.com/ads/archive/render_ad/?id=306603184815508&access_token=EAAGiekD1DjYBAP8nONd9LgyGZBHHMW0KUZCOIwZCZA4p4ncPADynZAylhG7PFZBPrhZAJd3eFA8vefy9SoabSfO3VvM4KFkcD6nxYABrRKjpLvy00kYHkXxWbMgPdaqLByM4cKVG57FW6jLYY4LO0hIHGsl0ScZBkRlFJFLvZBpvJpkAZCu6PB70Q66S9uDtb7INUZD",
+        "ad_delivery_start_time": "2022-01-19",
+        "ad_delivery_stop_time": "2022-01-25",
+        "id": "306603184815508"
+    }, {
+        "page_id": "192006797558324",
+        "ad_snapshot_url": "https://www.facebook.com/ads/archive/render_ad/?id=665682131572023&access_token=EAAGiekD1DjYBAP8nONd9LgyGZBHHMW0KUZCOIwZCZA4p4ncPADynZAylhG7PFZBPrhZAJd3eFA8vefy9SoabSfO3VvM4KFkcD6nxYABrRKjpLvy00kYHkXxWbMgPdaqLByM4cKVG57FW6jLYY4LO0hIHGsl0ScZBkRlFJFLvZBpvJpkAZCu6PB70Q66S9uDtb7INUZD",
+        "ad_delivery_start_time": "2022-11-04",
+        "id": "665682131572023"
+    }, {
+        "page_id": "111797060194748",
+        "ad_snapshot_url": "https://www.facebook.com/ads/archive/render_ad/?id=1770641189970905&access_token=EAAGiekD1DjYBAP8nONd9LgyGZBHHMW0KUZCOIwZCZA4p4ncPADynZAylhG7PFZBPrhZAJd3eFA8vefy9SoabSfO3VvM4KFkcD6nxYABrRKjpLvy00kYHkXxWbMgPdaqLByM4cKVG57FW6jLYY4LO0hIHGsl0ScZBkRlFJFLvZBpvJpkAZCu6PB70Q66S9uDtb7INUZD",
+        "ad_delivery_start_time": "2022-11-01",
+        "id": "1770641189970905"
+    }, {
+        "page_id": "104303702185131",
+        "ad_snapshot_url": "https://www.facebook.com/ads/archive/render_ad/?id=1308134050002635&access_token=EAAGiekD1DjYBAP8nONd9LgyGZBHHMW0KUZCOIwZCZA4p4ncPADynZAylhG7PFZBPrhZAJd3eFA8vefy9SoabSfO3VvM4KFkcD6nxYABrRKjpLvy00kYHkXxWbMgPdaqLByM4cKVG57FW6jLYY4LO0hIHGsl0ScZBkRlFJFLvZBpvJpkAZCu6PB70Q66S9uDtb7INUZD",
+        "ad_delivery_start_time": "2022-10-31",
+        "id": "1308134050002635"
+    }, {
+        "page_id": "339406392862392",
+        "ad_snapshot_url": "https://www.facebook.com/ads/archive/render_ad/?id=1328227071277486&access_token=EAAGiekD1DjYBAP8nONd9LgyGZBHHMW0KUZCOIwZCZA4p4ncPADynZAylhG7PFZBPrhZAJd3eFA8vefy9SoabSfO3VvM4KFkcD6nxYABrRKjpLvy00kYHkXxWbMgPdaqLByM4cKVG57FW6jLYY4LO0hIHGsl0ScZBkRlFJFLvZBpvJpkAZCu6PB70Q66S9uDtb7INUZD",
+        "ad_delivery_start_time": "2022-10-31",
+        "ad_delivery_stop_time": "2022-11-01",
+        "id": "1328227071277486"
+    }, {
+        "page_id": "103948701221001",
+        "ad_snapshot_url": "https://www.facebook.com/ads/archive/render_ad/?id=627039322501447&access_token=EAAGiekD1DjYBAP8nONd9LgyGZBHHMW0KUZCOIwZCZA4p4ncPADynZAylhG7PFZBPrhZAJd3eFA8vefy9SoabSfO3VvM4KFkcD6nxYABrRKjpLvy00kYHkXxWbMgPdaqLByM4cKVG57FW6jLYY4LO0hIHGsl0ScZBkRlFJFLvZBpvJpkAZCu6PB70Q66S9uDtb7INUZD",
+        "ad_delivery_start_time": "2022-10-31",
+        "ad_delivery_stop_time": "2022-11-03",
+        "id": "627039322501447"
+    }, {
+        "page_id": "103948701221001",
+        "ad_snapshot_url": "https://www.facebook.com/ads/archive/render_ad/?id=524843099129345&access_token=EAAGiekD1DjYBAP8nONd9LgyGZBHHMW0KUZCOIwZCZA4p4ncPADynZAylhG7PFZBPrhZAJd3eFA8vefy9SoabSfO3VvM4KFkcD6nxYABrRKjpLvy00kYHkXxWbMgPdaqLByM4cKVG57FW6jLYY4LO0hIHGsl0ScZBkRlFJFLvZBpvJpkAZCu6PB70Q66S9uDtb7INUZD",
+        "ad_delivery_start_time": "2022-10-31",
+        "ad_delivery_stop_time": "2022-11-03",
+        "id": "524843099129345"
+    }, {
+        "page_id": "103948701221001",
+        "ad_snapshot_url": "https://www.facebook.com/ads/archive/render_ad/?id=1258699268284909&access_token=EAAGiekD1DjYBAP8nONd9LgyGZBHHMW0KUZCOIwZCZA4p4ncPADynZAylhG7PFZBPrhZAJd3eFA8vefy9SoabSfO3VvM4KFkcD6nxYABrRKjpLvy00kYHkXxWbMgPdaqLByM4cKVG57FW6jLYY4LO0hIHGsl0ScZBkRlFJFLvZBpvJpkAZCu6PB70Q66S9uDtb7INUZD",
+        "ad_delivery_start_time": "2022-10-31",
+        "ad_delivery_stop_time": "2022-11-03",
+        "id": "1258699268284909"
+    }],
+    "paging": {
+        "cursors": {
+            "after": "c2NyYXBpbmdfY3Vyc29yOk1UWTJOekkyTXpNek5qb3hNalU0TmprNU1qWTRNamcwT1RBNQZDZD"
+        },
+        "next": "https://graph.facebook.com/v15.0/ads_archive?access_token=EAAGiekD1DjYBAP8nONd9LgyGZBHHMW0KUZCOIwZCZA4p4ncPADynZAylhG7PFZBPrhZAJd3eFA8vefy9SoabSfO3VvM4KFkcD6nxYABrRKjpLvy00kYHkXxWbMgPdaqLByM4cKVG57FW6jLYY4LO0hIHGsl0ScZBkRlFJFLvZBpvJpkAZCu6PB70Q66S9uDtb7INUZD&fields&search_terms=shirts&ad_active_status=ALL&ad_reached_countries=%5B%22US%22%2C%22GB%22%2C%22DE%22%2C%22FR%22%2C%22AT%22%5D&limit=8&after=c2NyYXBpbmdfY3Vyc29yOk1UWTJOekkyTXpNek5qb3hNalU0TmprNU1qWTRNamcwT1RBNQZDZD"
+    }
+}

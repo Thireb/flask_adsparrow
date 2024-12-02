@@ -1,0 +1,48 @@
+{% extends 'dashboard/base.html' %}
+
+{% block body %}
+                       
+<h5 class="fw-bold py-3 mb-4">
+  <span class="text-muted fw-light">Home /</span> Add Niche
+</h5>
+
+
+<div class="row mb-4">
+  <!-- Browser Default -->
+  <div class="col-md mb-4 mb-md-0">
+    <div class="card">
+      <h5 class="card-header">Add Niche</h5>
+      <div class="card-body">
+        <form class="browser-default-validation" method="post">
+          <div class="mb-3">
+            <label class="form-label" for="basic-default-name">Niche</label>
+            <input type="text" class="form-control" name="add-niche" id="basic-default-name" placeholder="Add New" required />
+          </div>
+      
+            
+        
+          
+          
+          
+          
+          <div class="row">
+            <div class="col-1">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="col-1">
+              <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /Browser Default -->
+
+
+
+
+ 
+</div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'index.html' %} 
+{% block form_content %}
+
+<div class="container">
+  {% for item in data %} {% if item['text'][2] != '' %}
+  <div class="card">
+    <div class="card-body">
+      <span>
+        <img src="{{item['imgs'][0]}}" class="_8nqq img" alt="" />
+        <h6>{{item['text'][0]}}</h6>
+      </span>
+      <span class="x14vqqas xyz">{{item['text'][1]}}</span>
+      <br />
+      <span>{{item['text'][2]}}</span>
+      <br />
+
+      {% for img in item['imgs'] %} {% if img != item['imgs'][0] %}
+      <div>
+        <img class="xz62fqu" src="{{img}}" alt="" />
+      </div>
+      {% endif %} {% endfor %} {% if item['videos'][0] != '' %}
+      <div>
+        <video
+          class="xz62fqu"
+          src="{{item['videos'][0]}}"
+          poster="{{item['videos'][1]}}"
+          controls
+        ></video>
+      </div>
+      {% endif %}
+
+      <div>
+        <a class="btn btn-primary" href="{{item['links'][0]}}">Go To Profile</a>
+        {% for link in item['links'] %} {% if link != item['links'][0] %}
+        <a href="{{link}}" class="btn btn-primary"> Go To Link</a>
+        {% endif %} {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endif %} {% endfor %}
+</div>
+{% endblock form_content %}

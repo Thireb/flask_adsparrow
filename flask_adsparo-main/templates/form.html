@@ -1,0 +1,102 @@
+{% extends 'index.html' %}
+{% block form_content %}
+
+    <div class="container">
+    <form class="form-inline" action="" method="post">
+      <div class="form-group m-2">
+        <select class="form-control" id="searchBy">
+          <option>Search By</option>
+          <option>Ad Text</option>
+          <option>Page name</option>
+          <option>Url text</option>
+        </select>
+      </div>
+
+      <div class="form-group m-2">
+        <input
+          type="search "
+          class="form-control"
+          id="search"
+          for="search"
+          placeholder="Search"
+          name="search"
+        />
+      </div>
+
+      <div class="form-group m-2">
+        <select class="form-control" id="sortBy">
+          <option>Sort By</option>
+          <option>Date found</option>
+          <option>Last seen</option>
+          <option>Ads number</option>
+        </select>
+      </div>
+
+      <!-- <div class="form-group m-2">
+        <button type="button" class="form-control">desc</button>
+      </div> -->
+
+      <div class="form-group m-2">
+        <select class="form-control" id="searchBy">
+          <option>Today</option>
+          <option>Yesterday</option>
+          <option>Last 7 Days</option>
+          <option>last 30 Days</option>
+          <option>This Month</option>
+          <option>Last Month</option>
+          <option>This Year</option>
+          <option>All Time</option>
+          <option>Custom Range</option>
+        </select>
+      </div>
+
+      <div class="form-group m-2">
+        <select class="form-control" for="country_drop" id="country" name="country_drop">
+          <!-- <option>Country</option> -->
+          <option value='["US","GB","DE","FR","AT"]'>All</option>
+          <option value="US">United States</option>
+          <option value="GB">United Kingdom</option>
+          <option value="DE">Germany</option>
+          <option value="FR">France</option>
+          <option value="AT">Austria</option>
+        </select>
+      </div>
+      <div class="form-group m-2">
+        <select class="form-control" for="type_drop" id="type" name="type_drop">
+          <option>Select Type</option>
+          <option>All Ecom Plateforms</option>
+          <option>Shopify</option>
+          <option>YouCan</option>
+          <option>ShopeBase</option>
+          <option>Wix</option>
+          <option>Woocommerce</option>
+          <option>BigCommerce</option>
+          <option>Ueespace</option>
+          <option>Squarespace</option>
+          <option>Salesforce</option>
+          <option>Clickfunnels</option>
+          <option>Shoplazza</option>
+          <option>Shoppy</option>
+          <option>Shopline</option>
+          <option>Commentsold</option>
+          <option>XShoppy</option>
+          <option>Wordpress</option>
+        </select>
+      </div>
+      <div class="form-group m-2">
+        <label for="Range">Total Ads</label>
+        <input
+          type="range"
+          name="rangeC"
+          class="form-control-range"
+          id="formControlRange"
+          min="5"
+          max="100"
+          value="5"
+        />
+      </div>
+      <input type="submit" value={{state}} class="btn btn-danger">
+      
+    </form>
+    </div>
+{% endblock form_content %}

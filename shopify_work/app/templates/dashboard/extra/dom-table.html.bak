@@ -1,0 +1,154 @@
+<!-- Stricken -->
+
+<tr>
+  <td>
+    <strike>
+      <span style="color: red"> Domain Name </span>
+    </strike>
+  </td>
+  <td>
+    <a
+      href="#"
+      title="FB ads library by Store"
+      class="text-primary fw-bold"
+      target="_blank"
+      ><img
+        src="{{ url_for('static', filename='dashboard/assets/img/exit-top-right.png')}}"
+        width="15px"
+    /></a>
+  </td>
+  <td>
+    <a
+      href="#"
+      title="FB ads library by Store"
+      class="text-primary fw-bold"
+      target="_blank"
+      ><img
+        src="{{ url_for('static', filename='dashboard/assets/img/exit-top-right.png')}}"
+        width="15px"
+    /></a>
+  </td>
+  <td><i class="bx bxl-google"></i></td>
+  <td><i class="bx bxl-facebook"></i></td>
+  <td></td>
+  <td></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-primary">515</span></td>
+  <td><b>1159</b></td>
+  <td>8</td>
+  <td>22-09-10</td>
+  <td>
+    <a
+      href="#"
+      title="FB ads library by Store"
+      class="text-primary fw-bold"
+      target="_blank"
+      ><img
+        src="{{ url_for('static', filename='dashboard/assets/img/edit.png')}}"
+    /></a>
+  </td>
+  <td>
+    <a
+      href="#"
+      title="FB ads library by Store"
+      class="text-primary fw-bold"
+      target="_blank"
+      ><img
+        src="{{ url_for('static', filename='dashboard/assets/img/hidden.png')}}"
+    /></a>
+  </td>
+  <td>
+    <a
+      href="#"
+      title="FB ads library by Store"
+      class="text-primary fw-bold"
+      target="_blank"
+      ><img
+        src="{{ url_for('static', filename='dashboard/assets/img/reload.png')}}"
+    /></a>
+  </td>
+</tr>
+
+<!-- ********* -->
+
+
+<!-- Unsticken -->
+
+<tr>
+  <td>Domain Name</td>
+  <td>
+    <a
+      href="#"
+      title="FB ads library by Store"
+      class="text-primary fw-bold"
+      target="_blank"
+      ><img
+        src="{{ url_for('static', filename='dashboard/assets/img/exit-top-right.png')}}"
+        width="15px"
+    /></a>
+  </td>
+  <td>
+    <a
+      href="#"
+      title="FB ads library by Store"
+      class="text-primary fw-bold"
+      target="_blank"
+      ><img
+        src="{{ url_for('static', filename='dashboard/assets/img/exit-top-right.png')}}"
+        width="15px"
+    /></a>
+  </td>
+  <td><i class="bx bxl-google"></i></td>
+  <td><i class="bx bxl-facebook"></i></td>
+  <td></td>
+  <td></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-secondary">38</span></td>
+  <td><span class="badge bg-primary">515</span></td>
+  <td><b>1159</b></td>
+  <td>8</td>
+  <td>22-09-10</td>
+  <td>
+    <a
+      href="#"
+      title="FB ads library by Store"
+      class="text-primary fw-bold"
+      target="_blank"
+      ><img
+        src="{{ url_for('static', filename='dashboard/assets/img/edit.png')}}"
+    /></a>
+  </td>
+  <td>
+    <a
+      href="#"
+      title="FB ads library by Store"
+      class="text-primary fw-bold"
+      target="_blank"
+      ><img
+        src="{{ url_for('static', filename='dashboard/assets/img/hidden.png')}}"
+    /></a>
+  </td>
+  <td>
+    <a
+      href="#"
+      title="FB ads library by Store"
+      class="text-primary fw-bold"
+      target="_blank"
+      ><img
+        src="{{ url_for('static', filename='dashboard/assets/img/reload.png')}}"
+    /></a>
+  </td>
+</tr>
+
+<!-- ********* -->

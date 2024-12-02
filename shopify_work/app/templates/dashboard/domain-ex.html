@@ -1,0 +1,94 @@
+{% extends 'dashboard/base.html' %}
+
+{% block body %}            
+                       
+<h5 class="fw-bold py-3 mb-4">
+  <span class="text-muted fw-light">Home /</span> Domain List
+</h5>
+
+
+<div class="table-responsive text-nowrap">
+<table id="domains" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th rowspan="2" style="text-align: center; width: 149px;" valign="middle" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" colspan="1" aria-label="Name: activate to sort column ascending">Name</th>
+                
+                <th rowspan="2" valign="middle" class="sorting_disabled" colspan="1" aria-label="ADS" style="width: 45px;">ADS</th>
+<th rowspan="2" valign="middle" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" colspan="1" aria-label="Url: activate to sort column ascending" style="width: 36px;">Url</th>
+                <th colspan="4" style="text-align: center" rowspan="1">Pixels</th>
+               <th colspan="7" style="text-align: center" rowspan="1">Week</th>
+                <th rowspan="2" style="text-align: center; width: 93px;" valign="middle" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" colspan="1" aria-label="Products: activate to sort column ascending">Products</th>
+                  <th rowspan="2" style="text-align: center; width: 56px;" valign="middle" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" colspan="1" aria-label="Sales: activate to sort column ascending">Sales</th>
+                <th rowspan="2" style="text-align: center; width: 53px;" valign="middle" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" colspan="1" aria-label="Days: activate to sort column ascending">Days</th>
+                <th rowspan="2" style="text-align: center; width: 85px;" valign="middle" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" colspan="1" aria-label="AT: activate to sort column ascending">AT</th>
+                <th rowspan="2" valign="middle" class="sorting_disabled" colspan="1" aria-label="Change" style="width: 79px;">Change</th>
+                <th rowspan="2" valign="middle" class="sorting_disabled" colspan="1" aria-label="Hide" style="width: 51px;">Hide</th>
+                <th rowspan="2" valign="middle" class="sorting_disabled" colspan="1" aria-label="Renew" style="width: 72px;">Renew</th>
+            </tr>
+            
+            <tr><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 26px;"><i class="bx bxl-google"></i></th><th class="sorting sorting_desc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 26px;" aria-sort="descending"><i class="bx bxl-facebook"></i></th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 26px;"><i class="bx bxl-tiktok"></i></th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label=": activate to sort column ascending" style="width: 26px;"><i class="bx bxl-snapchat"></i></th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="1: activate to sort column ascending" style="width: 42px;">1</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="2: activate to sort column ascending" style="width: 42px;">2</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="3: activate to sort column ascending" style="width: 42px;">3</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="4: activate to sort column ascending" style="width: 42px;">4</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="5: activate to sort column ascending" style="width: 42px;">5</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="6: activate to sort column ascending" style="width: 42px;">6</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="7: activate to sort column ascending" style="width: 42px;">7</th></tr>
+        </thead>
+        <tbody>
+            
+          <tr>
+            <td>
+                <strike>
+                    <span style="color:red">
+                        Domain Name
+                    </span>
+                </strike></td>
+            <td>
+                                
+              <a href="#" title="FB ads library by Store" class="text-primary fw-bold" target="_blank"><img src="{{ url_for('static', filename='dashboard/assets/img/exit-top-right.png')}}" width="15px"></a>
+      </td>
+            <td>
+                                
+              <a href="#" title="FB ads library by Store" class="text-primary fw-bold" target="_blank"><img src="{{ url_for('static', filename='dashboard/assets/img/exit-top-right.png')}}" width="15px"></a>
+      </td>
+            <td><i class="bx bxl-google"></i></td>
+            <td><i class="bx bxl-facebook"></i></td>
+            <td></td>
+            <td></td>
+             <td><span class="badge bg-secondary">38</span></td>
+            <td><span class="badge bg-secondary">38</span></td>
+             <td><span class="badge bg-secondary">38</span></td>
+             <td><span class="badge bg-secondary">38</span></td>
+            <td><span class="badge bg-secondary">38</span></td>
+             <td><span class="badge bg-secondary">38</span></td>
+             <td><span class="badge bg-secondary">38</span></td>
+            <td><span class="badge bg-primary">515</span></td>
+            <td><b>1159</b></td>
+            <td>8</td>
+            <td>22-09-10</td>
+            <td><a href="#" title="FB ads library by Store" class="text-primary fw-bold" target="_blank"><img src="{{ url_for('static', filename='dashboard/assets/img/edit.png')}}"></a></td>
+            <td><a href="#" title="FB ads library by Store" class="text-primary fw-bold" target="_blank"><img src="{{ url_for('static', filename='dashboard/assets/img/hidden.png')}}"></a></td>
+            <td><a href="#" title="FB ads library by Store" class="text-primary fw-bold" target="_blank"><img src="{{ url_for('static', filename='dashboard/assets/img/reload.png')}}"></a></td>
+            
+        </tr>
+
+        </tbody>
+     <!--   <tfoot>
+            <tr>
+                  <th>Name</th>
+                <th>ADS</th>
+                <th>Url</th>
+                <th>Pixels</th>
+                <th>Week</th>
+                <th>Products</th>
+                  <th>Sales</th>
+                <th>Days</th>
+                <th>AT</th>
+                <th>Change </th>
+                <th>Hide</th>
+                <th>Renew</th>
+            </tr>
+        </tfoot>-->
+    </table> 
+        
+</div>
+
+ 
+</div>
+
+            
+{% endblock %}
